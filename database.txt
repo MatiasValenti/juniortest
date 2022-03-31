@@ -1,0 +1,13 @@
+CREATE TABLE `juniortest`.`productlist` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(125) NOT NULL , `price` INT NOT NULL , `type` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `juniortest`.`producttype` ( `id` INT NOT NULL AUTO_INCREMENT , `type` VARCHAR(125) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+SELECT * FROM `productlist`
+SELECT * FROM `productlist`
+SELECT * FROM `productlist`;
+SELECT * FROM `productlist`;
+SELECT * FROM `productlist`
+SELECT * FROM `producttype`
+INSERT INTO `producttype` (`id`, `type`) VALUES (NULL, 'CD');
+INSERT INTO `producttype` (`id`, `type`) VALUES (NULL, 'CD');
+SELECT * FROM `productlist`
+INSERT INTO `productlist` (`id`, `name`, `price`, `type`) VALUES (NULL, 'Eurosis', '50', '1');
+INSERT INTO `productlist` (`id`, `name`, `price`, `type`) VALUES (NULL, 'Eurosis', '50', '1');
