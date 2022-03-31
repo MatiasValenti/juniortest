@@ -32,6 +32,18 @@ class connection {
         return json_decode($jsondata, true);
 
     }
+
+    private function UTF8Convertor($array) {
+        array_walk_recursive($array, function(&$item,$key){
+            if(!mb_detect_encoding($item, 'utf-8', true)){
+                $item = utf8_encode($item);
+            }
+        });
+        return $array;
+    }
+    
+
 }
+
 
 ?>
