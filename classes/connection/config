@@ -3,7 +3,7 @@
         "server": "localhost",
         "user": "root",
         "password": "",
-        "database": "juniorTest",
+        "database": "juniortest",
         "port": "3306"
     }
 }

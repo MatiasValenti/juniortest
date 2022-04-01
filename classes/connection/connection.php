@@ -43,7 +43,38 @@ class connection {
     }
     
 
+
+
+
+
+    public function getData($sqlquery){
+        $results = $this->connectionDb->query($sqlquery);
+        $resultArr = array();
+        foreach ($results as $key) {
+            $resultArr[] = $key ;
+        };
+        return $this->UTF8Convertor($resultArr);
+    }
+
+
+
+    public function postData($sqlquery){
+        $results = $this->connectionDb->query($sqlquery);
+        return $this->connectionDb->affected_rows;
+    }
+
+    public function postDataId($sqlquery){
+        $results = $this->connectionDb->query($sqlquery);
+        $rows = $this->connectionDb->affected_rows;
+        if ($rows >= 1){
+            return $this->connectionDb->insert_id;
+        } else {
+            return 0;
+        }
+    }
 }
+
+
 
 
 ?>
